@@ -126,7 +126,7 @@ public:
 DynamicTopography::DynamicTopography(vector <movement> &m) : mvn(m), cut(vec(point(0, 0), point(0, 0)), 0.0)
 {
 
-};
+}
 
 void DynamicTopography::set_file_index(int index)
 {

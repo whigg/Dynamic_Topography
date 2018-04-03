@@ -1,8 +1,10 @@
 #include <iostream>
 #include <fstream>
+#include <sstream>
 #include <vector>
 #include <string>
 #include <cmath>
+#include <locale>
 
 #include "dynamic_topography.h"
 // #include "integration.h"
@@ -11,17 +13,15 @@
 // #include <windows.h>
 
 
-#include <iostream>
-#include <sstream>
-#include <locale>
-
 using namespace std;
 
 
 void print_eng_usage()
 {
 	cout << "This Software is for calculating dynamic topography between two points\n\n";
-	cout << "USAGE:\tintegral_dt.exe <vp_out_file> <boundary_points_list> <dt_out_file>\n\n"
+	cout << "USAGE:\tintegral_dt.exe <vp_out_file> <boundary_points_list> <dt_out_file>\n\n";
+
+	cout << "Example: ""integral_DT.exe out_2006-05-04_0730_n27799.m.pro_2006-05-04_1300_n70056.m.pro.txt stations.txt DT_out.txt""\n\n"
 
 		 << "\t<input_file>\t\tVecPlotter output file\n"
 		 	<< "\t    string format:\n"
